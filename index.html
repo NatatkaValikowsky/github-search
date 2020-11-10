@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrapper">
+    <form class="main-form">
+        <input type="text" class="search-field" placeholder="Введите строку поиска">
+        <ul class="search-results"></ul>
+        <ul class="selected-repos">
+
+        </ul>
+    </form>
+</div>
+
+<template id="github-view">
+    <li class="selected-repo">
+        <div class="repo-info">
+            <span class="repo-name"></span>
+            <span class="repo-owner"></span>
+            <span class="repo-stars"></span>
+        </div>
+        <div class="close-btn">
+            <img src="./delete-icon.svg" alt="Кнопка удаления">
+        </div>
+    </li>
+</template>
+
+<script src="./script.js"></script>
+</body>
+</html>
