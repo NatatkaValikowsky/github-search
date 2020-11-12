@@ -24,7 +24,7 @@ async function getData(e){
                     owner: json.items[i].owner.login,
                     stars: json.items[i].stargazers_count
                 }));
-                resultsBlock.appendChild(clone);
+                resultsBlock.append(clone);
             }
         } else{
             resultsBlock.innerHTML = 'Возникла ошибка';
@@ -40,7 +40,7 @@ async function getData(e){
                 clone.querySelector('.close-btn').addEventListener('click', function (e) {
                     this.closest('.selected-repo').remove();
                 });
-                selectedBlock.appendChild(clone);
+                selectedBlock.append(clone);
                 searchField.value = '';
                 resultsBlock.innerHTML = '';
             });
